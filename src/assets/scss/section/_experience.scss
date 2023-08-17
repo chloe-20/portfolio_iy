@@ -1,0 +1,137 @@
+.experience {
+
+  &__inner {
+    padding: 16px;
+  }
+
+  &__title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 70%;
+    height: 5vw;
+    margin-bottom: 100px;
+    font-family: var(--mainKor-font);
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    color: var(--black100);
+    border-bottom: 0.4vw solid var(--black100);
+
+    @media (max-width: $deviceMobile){ 
+      top: 68px;
+      z-index: 100;
+      width: 100%;
+      height: auto;
+      margin-bottom: 10vw;
+      font-size: 30px;
+      background-color: var(--mainBg-color);
+    }
+  }
+
+  &__item {
+    @include flex-center;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    height: 70vh;
+
+    &.s1 {
+      top: 180px;
+      background-color: var(--subBg100);
+
+      @media (max-width: $deviceMobile){ 
+        top: 140px;
+      }
+    }
+
+    &.s2 {
+      top: 200px;
+      background-color: var(--subBg200);
+
+      @media (max-width: $deviceMobile){ 
+        top: 160px;
+      }
+    }
+    
+    // &.s3 {
+    //   top: 220px;
+    //   background-color: var(--subBg300);
+
+    //   @media (max-width: $deviceMobile){ 
+    //     top: 180px;
+    //   }
+    // }
+
+    // &.s4 {
+    //   top: 240px;
+    //   background-color: var(--subBg400);
+
+    //   @media (max-width: $deviceMobile){ 
+    //     top: 200px;
+    //   }
+    // }
+
+    .period {
+      position: absolute;
+      left: 1vw;
+      top: 1vw;
+      font-family: var(--mainNum-font);
+      font-size: 2vw;
+      font-weight: 500;
+      line-height: 1;
+
+      @media (max-width: $deviceMobile){ 
+        left: 20px;
+        top: 20px;
+        font-size: 40px;
+      }
+    }
+
+    .text {
+      text-align: center;
+      margin-bottom: 1rem;
+
+      > div {
+        font-family: var(--mainEng-font);
+        font-size: 2vw;
+        font-weight: 600;
+        text-decoration: underline;
+
+        @media (max-width: $deviceMobile){ 
+          font-size: 26px;
+        }
+      }
+    }
+
+    .title {
+      margin-bottom: 1rem;
+      font-family: var(--mainKor-font);
+    }
+    
+    .info {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 0;
+      bottom: 3%;
+      width: 98%;
+      margin-left: 1%;
+      border-top: 1px solid var(--black);
+      border-bottom: 1px solid var(--black);
+
+      @media (max-width: $deviceMobile){ 
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        padding: 5px 0;
+      }
+
+      span {
+        padding: 3px 0;
+        font-family: var(--mainKor-font);
+        font-size: 12px;
+      }
+    }
+  }
+}
