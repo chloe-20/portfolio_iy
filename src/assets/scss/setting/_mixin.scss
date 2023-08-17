@@ -1,3 +1,25 @@
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+@mixin blind {
+  overflow: hidden;
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  z-index: -1;
+}
+
 // 가운데 정렬
 @mixin flex-center {
   display: flex;

@@ -1,32 +1,37 @@
 #intro {
   height: 100vh;
 }
-.intro__inner {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;  
-  padding: 16px;
 
-  @media all and (max-width: 768px){
-    justify-content: center;
+.intro {
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;  
+    padding: 16px;
+
+    @media all and (max-width: $deviceMobile){
+      justify-content: center;
+    }
   }
 
-  .intro__title {
-    font-size: 10vw;
+  &__title {
+    margin-left: -0.5vw;
+    font-size: 8.5vw;
     font-weight: 800;
     line-height: 1;
     white-space: nowrap;
-    text-indent: -0.5vw;
     letter-spacing: -0.3vw;
 
-    @media all and (max-width: 320px){ 
+    @media all and (max-width: $mobile){ 
       display: none;
     }
   }
-  .intro__text {
+
+  &__text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,24 +40,24 @@
     width: 100%;
     height: 40vh;
     background-color: var(--black);
-    color: var(--white);
-      
+    color: var(--white);      
 
     .text {
       position: relative;
-      z-index: 100;
+      z-index: 50;
       font-size: 3vw;
       font-weight: 900;
-      line-height: 1;
+      line-height: 1.2;
       text-decoration: underline;
       text-align: center;      
       transition: all 0.3s;
       cursor: all-scroll;
 
-      @media all and (max-width: 768px) { 
+      @media all and (max-width: $deviceMobile) { 
         font-size: 24px;
       }
     }
+
     .img {
       position: absolute;
       left: 50%;
@@ -65,7 +70,7 @@
       filter: grayscale(100%);
       transition: all 0.3s;
 
-      @media all and (max-width: 320px){ 
+      @media all and (max-width: $deviceMobile){ 
         width: 20vh;
         height: 20vh;
       }
@@ -79,7 +84,8 @@
       filter: grayscale(0);
     }
   }
-  .intro__lines {
+
+  &__lines {
     width: 100%;
 
     .line {
@@ -104,24 +110,28 @@
       &:nth-child(4){
         height: 9px;
       }
+
       &:nth-child(5){
         height: 13px;
       }
+
       &:nth-child(6){
         height: 17px;
       }
+      
       &:nth-child(7){
         height: 25px;
       }
     }
 
     &.bottom {
+
       .line {
         display: none;
         margin-top: 0.5vw;
         margin-bottom: 0;
 
-        @media all and (max-width: 768px){ 
+        @media all and (max-width: $deviceMobile){ 
           display: block;
         }
 

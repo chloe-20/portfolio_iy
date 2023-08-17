@@ -1,3 +1,12 @@
+// device
+$devicePC : 1920px;
+$devicePC-extra : 1800px;
+$devicePC-mid : 1600px;
+$deviceTablet : 1280px;
+$deviceTablet-no : 1024px;
+$deviceMobile : 768px;
+$mobile : 360px;
+
 :root {
   --mainEng-font: "Montserrat";
   --mainKor-font: "nanumSquareNeo";
@@ -28,10 +37,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: $deviceMobile) {
       font-size: 14px;
       line-height: 1.4;
   }
 }
 
-body {background-color: var(--mainBg-color);}
+body {
+  background-color: var(--mainBg-color);
+}

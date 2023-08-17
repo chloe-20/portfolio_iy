@@ -33,11 +33,11 @@ const Header = () => {
   return (
     <header id="header" role="banner">
       <div className="header__inner">
-        <div className="header__logo">
+        <h1 className="header__logo">
           <a href="/">PORTFOLIO<em>CHLOE_CHOI</em></a>
-        </div>
+        </h1>
         <nav className="header__nav" role="navigation" aria-label="메인 메뉴">
-          <ul>
+          <ul className="menu">
           {headerNav.map((nav, key) => (
             <li key={key}>
               <a href={nav.url}>{nav.title}</a>
