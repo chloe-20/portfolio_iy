@@ -1,15 +1,15 @@
 import React from "react";
 
 import work01 from "../assets/img/port01.jpg";
-import work02 from "../assets/img/port02.jpg";
-import work03 from "../assets/img/port03.jpg";
-import work04 from "../assets/img/port04.jpg";
-import work05 from "../assets/img/port05.jpg";
-import work06 from "../assets/img/port06.jpg";
-import work07 from "../assets/img/port07.jpg";
-import work08 from "../assets/img/port08.jpg";
-import work09 from "../assets/img/port09.jpg";
-import work10 from "../assets/img/port10.jpg";
+import work02 from "../assets/img/port01.jpg";
+import work03 from "../assets/img/port01.jpg";
+import work04 from "../assets/img/port01.jpg";
+import work05 from "../assets/img/port01.jpg";
+import work06 from "../assets/img/port01.jpg";
+import work07 from "../assets/img/port01.jpg";
+import work08 from "../assets/img/port01.jpg";
+import work09 from "../assets/img/port01.jpg";
+import work10 from "../assets/img/port01.jpg";
 
 const workText = [
     {

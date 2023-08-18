@@ -1,0 +1,16 @@
+#footer {
+  font-family: var(--mainKor-font);
+}
+
+.footer {
+  
+  &__inner {
+    padding: 16px;
+  }
+  
+  &__right {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
