@@ -222,7 +222,7 @@ textarea {
   top: 10px;
 }
 
-// #skip,
-// .blind {
-//   @include blind();
-// }
+#skip,
+.blind {
+  @include blind;
+}

@@ -40,6 +40,10 @@
       top: 180px;
       background-color: var(--subBg100);
 
+      .career {
+        display: none;
+      }
+      
       @media (max-width: $deviceMobile){ 
         top: 140px;
       }
@@ -131,6 +135,18 @@
         padding: 3px 0;
         font-family: var(--mainKor-font);
         font-size: 12px;
+      }
+    }
+
+    .career {
+      margin: 0 2px;
+      font-size: 1rem;
+      text-decoration: underline;
+      color: var(--black200);
+      transition: all 0.3s;
+
+      &:hover {
+        color: var(--black);
       }
     }
   }
