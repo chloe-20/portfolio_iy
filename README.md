@@ -1,6 +1,6 @@
 # 포트폴리오(수정 예정)
 
-[react.js](https://github.com/chloe-20/portfolio_iy)를 이용하여 제작하였습니다. 
+
 
 ## 완성작 보기 
 미리보기 : https://portfolio-iy.netlify.app/
