@@ -5,7 +5,7 @@ const Footer = () => {
         <footer id="footer" role="contentinfo">
             <div className="footer__inner">                
                 <div className="footer__right">
-                <div class="footer__right">&copy; 2023 CHLOE_CHOI PORTFOLIO</div>
+                <div className="footer__right">&copy; 2023 CHLOE_CHOI PORTFOLIO</div>
                 </div>
             </div>
         </footer>

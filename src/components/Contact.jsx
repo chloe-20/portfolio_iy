@@ -1,15 +1,5 @@
 import React from "react";
-
-const contactText = [
-    {
-        link: "https://github.com/chloe-20",
-        title: "GITHUB.COM/CHLOE-20",
-    },
-    {
-        link: "mailto:ioiuioiciy88@gmail.com",
-        title: "IOIUIOICIY88@GMAIL.COM",
-    },
-];
+import  { contactText } from "../constants"
 
 const Contact = () => {
     return (
@@ -31,7 +21,7 @@ const Contact = () => {
                             <div key={key}>
                                 <a
                                     href={contact.link}
-                                    rel="noreferrer"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                                 >
                                     {contact.title}
