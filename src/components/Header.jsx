@@ -36,7 +36,7 @@ const Header = () => {
         <h1 className="header__logo">
           <a href="/">PORTFOLIO<em>CHLOE_CHOI</em></a>
         </h1>
-        <nav className="header__nav" role="navigation" aria-label="메인 메뉴">
+        <nav className={`header__nav ${show ? "show" : ""}`} role="navigation" aria-label="메인 메뉴">
           <ul className="menu">
           {headerNav.map((nav, key) => (
             <li key={key}>
