@@ -1,6 +1,6 @@
 # 포트폴리오(ing)
 
-[react.js](https://github.com/chloe-20/portfolio_iy)를 이용하여 사이트를 제작합니다. 
+작업물을 정리한 공간입니다:-)
 
 ## 완성작 보기
 미리보기 : https://portfolio-iy.netlify.app/
