@@ -1,5 +1,4 @@
 .experience {
-
   &__inner {
     padding: 16px;
   }
@@ -18,7 +17,7 @@
     color: var(--black100);
     border-bottom: 0.4vw solid var(--black100);
 
-    @media (max-width: $deviceMobile){ 
+    @media (max-width: $deviceMobile) {
       top: 68px;
       z-index: 100;
       width: 100%;
@@ -43,8 +42,8 @@
       .career {
         display: none;
       }
-      
-      @media (max-width: $deviceMobile){ 
+
+      @media (max-width: $deviceMobile) {
         top: 140px;
       }
     }
@@ -53,25 +52,25 @@
       top: 200px;
       background-color: var(--subBg200);
 
-      @media (max-width: $deviceMobile){ 
+      @media (max-width: $deviceMobile) {
         top: 160px;
       }
     }
-    
-    // &.s3 {
-    //   top: 220px;
-    //   background-color: var(--subBg300);
 
-    //   @media (max-width: $deviceMobile){ 
-    //     top: 180px;
-    //   }
-    // }
+    &.s3 {
+      top: 220px;
+      background-color: var(--subBg300);
+
+      @media (max-width: $deviceMobile) {
+        top: 180px;
+      }
+    }
 
     // &.s4 {
     //   top: 240px;
     //   background-color: var(--subBg400);
 
-    //   @media (max-width: $deviceMobile){ 
+    //   @media (max-width: $deviceMobile){
     //     top: 200px;
     //   }
     // }
@@ -85,7 +84,7 @@
       font-weight: 500;
       line-height: 1;
 
-      @media (max-width: $deviceMobile){ 
+      @media (max-width: $deviceMobile) {
         left: 20px;
         top: 20px;
         font-size: 40px;
@@ -102,7 +101,7 @@
         font-weight: 600;
         text-decoration: underline;
 
-        @media (max-width: $deviceMobile){ 
+        @media (max-width: $deviceMobile) {
           font-size: 26px;
         }
       }
@@ -112,7 +111,7 @@
       margin-bottom: 1rem;
       font-family: var(--mainKor-font);
     }
-    
+
     .info {
       display: flex;
       justify-content: space-between;
@@ -124,7 +123,7 @@
       border-top: 1px solid var(--black);
       border-bottom: 1px solid var(--black);
 
-      @media (max-width: $deviceMobile){ 
+      @media (max-width: $deviceMobile) {
         flex-direction: column;
         width: 90%;
         margin-left: 5%;
