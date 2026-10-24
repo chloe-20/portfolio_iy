@@ -6,16 +6,20 @@ import link from "./utils/link";
 
 const App = () => {
     useEffect(() => {
-        smooth();
+        const cleanupSmooth = smooth();
         link();
+
+        return () => {
+            cleanupSmooth();
+        };
     }, []);
 
     return (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomeView />} />
-        </Routes>
-    </BrowserRouter>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomeView />} />
+            </Routes>
+        </BrowserRouter>
     );
 };
 
